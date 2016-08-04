@@ -1,7 +1,6 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
 import HomePage from '../components/HomePage'
-import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
     render() {
@@ -16,7 +15,7 @@ class MarkdownWrapper extends React.Component {
         }
 
         return (
-            <DocumentTitle title={ `${post.title} • ${config.siteTitle}` }>
+            <DocumentTitle title={ `${post.title}` }>
                 <div>
                     { template }
                 </div>

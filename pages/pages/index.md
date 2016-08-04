@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'BBQ Agency'
 layout: home
 path: '/'
 
