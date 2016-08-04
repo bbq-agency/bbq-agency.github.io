@@ -23,7 +23,7 @@ class HomePage extends React.Component {
         setInterval(() => {
             this.increment++
             this.forceUpdate();
-        }, 1200)
+        }, 1400)
     }
     render() {
         let icon
@@ -47,9 +47,6 @@ class HomePage extends React.Component {
                 <h1 className='title'>BBQ Agency</h1>
                 <div className='homepage'>
                     <MorphReplaceResize className='homepage__svg' rotation={'none'}>
-                        {icon}
-                    </MorphReplaceResize>
-                    <MorphReplaceResize className='homepage__svg' rotation={'counterclock'}>
                         {icon}
                     </MorphReplaceResize>
                 </div>
