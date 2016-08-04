@@ -1,0 +1,44 @@
+$S: 508px;
+$M: 754px;
+$L: 1054px;
+$XL: 1300px;
+@import '../../node_modules/coriolan-ui/mixins/media';
+@import '../../node_modules/coriolan-ui/mixins/clearfix';
+
+.title {
+    padding: 12px 10px;
+    background: #dedede;
+    position: relative;
+    letter-spacing: 2.5px;
+    font-size: 12px;
+    font-weight: 400;
+    // font-family: Montserrat,sans-serif;
+}
+
+.homepage {
+    @include clearfix;
+    text-align: center;
+    // padding: 40px 0;
+    max-width: 333px;
+    margin: 0 auto;
+    // background-position: top center;
+    // background-repeat: no-repeat;
+    // background-image: url(bgPlane.jpg);
+    // background-image: url(bgManufactory.jpg);
+    // background-attachment: fixed;
+    // background-size: cover;
+    // background-color: #3c291d;
+    position: relative;
+    z-index: 20;
+    // cursor: pointer;
+
+    &__svg {
+        // padding: 10px;
+        // box-sizing: border-box;
+        float: left;
+        width: 50%;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}

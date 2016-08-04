@@ -1,0 +1,16 @@
+siteTitle = "Coriolan UI"
+siteDescr = "front-end concept"
+siteAuthor = "Ihor Orlovskyi"
+
+siteLinkedinUrl = ""
+siteFbUrl = ""
+siteGithubUrl = "https://github.com/coriolan-ui/coriolan-ui"
+siteSoundcloudUrl = ""
+siteInstagramUrl = ""
+siteGpUrl = ""
+siteTwitterUrl = ""
+
+poweredUrl = 'http://bbq-agency.github.io'
+poweredTitle = 'BBQ Agency'
+
+linkPrefix = "/teslar-react"
