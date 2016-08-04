@@ -46,7 +46,7 @@ class HomePage extends React.Component {
             <div>
                 <h1 className='title'>BBQ Agency</h1>
                 <div className='homepage'>
-                    <MorphReplaceResize className='homepage__svg' rotation={'none'}>
+                    <MorphReplaceResize className='homepage__svg' width={300} height={300} rotation={'none'}>
                         {icon}
                     </MorphReplaceResize>
                 </div>
