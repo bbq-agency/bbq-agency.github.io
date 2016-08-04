@@ -12,33 +12,21 @@ $XL: 1300px;
     letter-spacing: 2.5px;
     font-size: 12px;
     font-weight: 400;
-    // font-family: Montserrat,sans-serif;
 }
 
 .homepage {
     @include clearfix;
     text-align: center;
-    // padding: 40px 0;
-    max-width: 333px;
+    width: 100%;
+    max-width: 666px;
     margin: 0 auto;
-    // background-position: top center;
-    // background-repeat: no-repeat;
-    // background-image: url(bgPlane.jpg);
-    // background-image: url(bgManufactory.jpg);
-    // background-attachment: fixed;
-    // background-size: cover;
-    // background-color: #3c291d;
     position: relative;
     z-index: 20;
-    // cursor: pointer;
 
     &__svg {
-        // padding: 10px;
-        // box-sizing: border-box;
         float: left;
-        width: 50%;
         display: block;
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
     }
 }
