@@ -29,17 +29,17 @@ class HomePage extends React.Component {
         let icon
 
         if (this.increment % 6 === 1) {
-            icon = <AnimalBull key="AnimalBull" />
+            icon = <AnimalBull key='AnimalBull' />
         } else if (this.increment % 6 === 2) {
-            icon = <AnimalDog key="AnimalDog" />
+            icon = <AnimalDog key='AnimalDog' />
         } else if (this.increment % 6 === 3) {
-            icon = <AnimalRabbit key="AnimalRabbit" />
+            icon = <AnimalRabbit key='AnimalRabbit' />
         } else if (this.increment % 6 === 4) {
-            icon = <AnimalRhino key="AnimalRhino" />
+            icon = <AnimalRhino key='AnimalRhino' />
         } else if (this.increment % 6 === 5) {
-            icon = <AnimalRooster key="AnimalRooster" />
+            icon = <AnimalRooster key='AnimalRooster' />
         } else {
-            icon = <AnimalUnicorn key="AnimalUnicorn" />
+            icon = <AnimalUnicorn key='AnimalUnicorn' />
         }
 
         return (
