@@ -1,25 +1,25 @@
-# Site of Coriolan UI on Gatsby
+# bbq-agency.github.io
 
-### front-end concept
+_Web development of BBQ Agency site_
 
-Web development of Coriolan UI site
+### Used
+
+[Gatsby](https://github.com/gatsbyjs/gatsby) - static site generator based on [ReactJS](https://facebook.github.io/react)
+
+[Webpack](https://webpack.github.io) - build system
+
+[Coriolan UI](https://coriolan-ui.github.io) - [Sass](http://sass-lang.com) mixins pack
+
+[GitHub Pages](https://pages.github.com) - free hosting
 
 ### Run
 
 `npm i`
 
-`gatsby develop`
+`npm start`
 
-### Build
+### Deploy
 
-`gatsby build` (or `gatsby build --prefix-links`)
+`npm run deploy`
 
-After that just copy all from 'build' folder into root of `master` (or `gh-pages`) branch and push.
-
-### Used
-
-JavaScript library - [ReactJS](https://facebook.github.io/react)
-
-Static site generator - [GatsbyJS](https://github.com/gatsbyjs/gatsby)
-
-Proudly hosted by [GitHub Pages](https://pages.github.com)
+#### Have fun! :)
