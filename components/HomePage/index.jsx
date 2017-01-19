@@ -50,6 +50,7 @@ class HomePage extends React.Component {
                         {icon}
                     </MorphReplaceResize>
                 </div>
+                <h2 className='slogan'>We Makes Websites</h2>
             </div>
         );
     }
