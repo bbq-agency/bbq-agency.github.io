@@ -23,6 +23,15 @@ $XL: 1300px;
     position: relative;
     z-index: 20;
 
+    &__bbqlogo {
+        max-width: 80px;
+        margin: 20px auto 40px;
+    }
+
+    &__contacts {
+        font-size: 10px;
+    }
+
     &__svg {
         float: left;
         display: block;

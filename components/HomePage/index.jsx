@@ -26,6 +26,9 @@ class HomePage extends React.Component {
         }, 1400)
     }
     render() {
+        const {route} = this.props
+        const page = route.page.data
+
         let icon
 
         if (this.increment % 6 === 1) {
@@ -43,14 +46,19 @@ class HomePage extends React.Component {
         }
 
         return (
-            <div>
+            <div className='homepage2'>
                 <h1 className='title'>BBQ Agency</h1>
+                <div className='homepage__bbqlogo'>
+                    <img src='./bbq-agency-logo.svg' alt='BBQ Agency Logo SVG'/>
+                </div>
+                <div className='homepage__contacts'>Contacts</div>
                 <div className='homepage'>
                     <MorphReplaceResize className='homepage__svg' width={300} height={300} rotation={'none'}>
                         {icon}
                     </MorphReplaceResize>
                 </div>
                 <h2 className='slogan'>We Makes Websites</h2>
+                <div dangerouslySetInnerHTML={{ __html: page.body}} />
             </div>
         );
     }
