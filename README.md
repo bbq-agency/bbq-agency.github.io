@@ -16,7 +16,7 @@ _Web development of BBQ Agency site_
 
 `npm i`
 
-`npm start`
+`npm run develop`
 
 ### Deploy
 
