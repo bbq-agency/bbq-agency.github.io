@@ -1,7 +1,5 @@
 ---
 title: 'BBQ Agency'
-layout: home
+layout: Home
 path: '/'
 ---
-
-## We Makes Websites
