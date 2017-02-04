@@ -1,6 +1,11 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
+import Page from '../components/Page'
 import HomePage from '../components/HomePage'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
+import './style.scss'
 
 class MarkdownWrapper extends React.Component {
     render() {
@@ -10,14 +15,22 @@ class MarkdownWrapper extends React.Component {
 
         layout = post.layout
 
-        if (layout === 'home') {
+        if (layout === 'Page') {
+            template = <Page {...this.props}/>
+        } else if (layout === 'Home') {
             template = <HomePage {...this.props}/>
         }
 
         return (
             <DocumentTitle title={ `${post.title}` }>
-                <div>
-                    { template }
+                <div className='flex-sticky'>
+                    <div className='flex-sticky__content'>
+                        <Header {...this.props}/>
+                        { template }
+                    </div>
+                    <div className='flex-sticky__footer'>
+                        <Footer {...this.props}/>
+                    </div>
                 </div>
             </DocumentTitle>
         );
