@@ -1,47 +1,25 @@
-$S: 508px;
-$M: 754px;
-$L: 1054px;
-$XL: 1300px;
+@import '../../node_modules/coriolan-ui/tools/variables';
 @import '../../node_modules/coriolan-ui/mixins/media';
-@import '../../node_modules/coriolan-ui/mixins/clearfix';
-
-.title {
-    padding: 12px 10px;
-    background: #dedede;
-    position: relative;
-    letter-spacing: 2.5px;
-    font-size: 12px;
-    font-weight: 400;
-}
+// @import '../../node_modules/coriolan-ui/mixins/clearfix';
 
 .homepage {
-    @include clearfix;
+    // @include clearfix;
     text-align: center;
     width: 100%;
-    max-width: 666px;
+    max-width: 444px;
     margin: 0 auto;
     position: relative;
     z-index: 20;
 
-    &__bbqlogo {
-        max-width: 80px;
-        margin: 20px auto 40px;
-    }
-
-    &__contacts {
-        font-size: 10px;
-    }
-
-    &__svg {
-        float: left;
+    &__morph {
         display: block;
-        width: 100% !important;
-        height: auto !important;
+        width: 100%;
+        height: auto;
     }
-}
 
-.slogan {
-    letter-spacing: 2.5px;
-    font-size: 12px;
-    font-weight: 400;
+    &__slogan {
+        letter-spacing: 2.5px;
+        font-size: 12px;
+        font-weight: 400;
+    }
 }

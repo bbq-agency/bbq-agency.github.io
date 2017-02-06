@@ -1,37 +1,48 @@
-$S: 508px;
-$M: 754px;
-$L: 1054px;
-$XL: 1300px;
+@import '../../node_modules/coriolan-ui/tools/variables';
 @import '../../node_modules/coriolan-ui/mixins/media';
-@import '../../node_modules/coriolan-ui/mixins/clearfix';
+// @import '../../node_modules/coriolan-ui/mixins/clearfix';
 
 .header {
-    padding: 20px 10px;
-    background: #dedede;
+    padding: 10px;
+    // background: #dedede;
     position: relative;
-    letter-spacing: 2.5px;
-    font-size: 10px;
-}
-
-.homepage {
-    text-align: center;
-    // padding: 40px 0;
-    max-width: 666px - 444px;
+    // letter-spacing: 2.5px;
+    // font-size: 10px;
+    max-width: 555px;
     margin: 0 auto;
-    // background-position: top center;
-    // background-repeat: no-repeat;
-    // background-image: url(bgPlane.jpg);
-    // background-image: url(bgManufactory.jpg);
-    // background-attachment: fixed;
-    // background-size: cover;
-    // background-color: #3c291d;
-    position: relative;
-    z-index: 20;
-    cursor: pointer;
 
-    &__svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    &__link {
+        position: relative;
         display: block;
-        width: 100%;
-        height: auto;
+        background: #eee;
+        padding: 8px 10px;
+        text-decoration: none;
+        text-align: left;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        &--logo {
+
+            img {
+                max-width: 60px;
+                // display: block;
+                margin-right: 8px;
+            }
+
+            span {
+                // visibility: hidden;
+                // font-size: 0;
+                // position: absolute;
+                // text-indent: -9999px;
+            }
+        }
     }
 }

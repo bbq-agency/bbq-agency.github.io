@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
+
 import { MorphReplace, MorphReplaceResize } from 'react-svg-morph';
 import AnimalBull from '../SVG/AnimalBull';
 import AnimalDog from '../SVG/AnimalDog';
@@ -9,7 +10,6 @@ import AnimalRabbit from '../SVG/AnimalRabbit';
 import AnimalRhino from '../SVG/AnimalRhino';
 import AnimalRooster from '../SVG/AnimalRooster';
 import AnimalUnicorn from '../SVG/AnimalUnicorn';
-import Ink from 'react-ink'
 
 import './style.scss'
 
@@ -46,18 +46,11 @@ class HomePage extends React.Component {
         }
 
         return (
-            <div className='homepage2'>
-                <h1 className='title'>BBQ Agency</h1>
-                <div className='homepage__bbqlogo'>
-                    <img src='./bbq-agency-logo.svg' alt='BBQ Agency Logo SVG'/>
-                </div>
-                <div className='homepage__contacts'>Contacts</div>
-                <div className='homepage'>
-                    <MorphReplaceResize className='homepage__svg' width={300} height={300} rotation={'none'}>
-                        {icon}
-                    </MorphReplaceResize>
-                </div>
-                <h2 className='slogan'>We Makes Websites</h2>
+            <div className='homepage'>
+                <MorphReplaceResize className='homepage__morph' width={200} height={200} rotation={'none'}>
+                    {icon}
+                </MorphReplaceResize>
+                <h2 className='homepage__slogan'>We Makes Websites</h2>
                 <div dangerouslySetInnerHTML={{ __html: page.body}} />
             </div>
         );

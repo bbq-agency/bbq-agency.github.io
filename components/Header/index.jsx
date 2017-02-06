@@ -1,50 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { RouteHandler, Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
-import { MorphReplace, MorphReplaceResize } from 'react-svg-morph';
-import AnimalBull from '../SVG/AnimalBull';
-import AnimalDog from '../SVG/AnimalDog';
-import AnimalRabbit from '../SVG/AnimalRabbit';
-import AnimalRhino from '../SVG/AnimalRhino';
-import AnimalRooster from '../SVG/AnimalRooster';
-import AnimalUnicorn from '../SVG/AnimalUnicorn';
 import Ink from 'react-ink'
 
 import './style.scss'
+import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
 
 class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            AnimalUnicorn: false,
-            AnimalRhino: true,
-            AnimalBull: false
-        };
-    }
-    toggleAnimal() {
-        this.setState({AnimalRhino: !this.state.AnimalRhino});
-    }
-
     render() {
-        const {route} = this.props
-        const page = route.page.data
-
         return (
-            <div>
-                <div className='homepage' onClick={this.toggleAnimal.bind(this)}>
-                    <MorphReplace className='homepage__svg' rotation={'none'}>
-                        {this.state.AnimalRhino ? <AnimalRhino key='AnimalRhino' /> :  <AnimalUnicorn key='AnimalUnicorn' /> }
-                    </MorphReplace>
+            <div className='header'>
+
+                <Link to={ prefixLink('/')} className='header__link header__link--logo' activeClassName='is-selected' onlyActiveOnIndex>
+                    <img src={ prefixLink(BbqLogo) } alt='BBQ Agency Logo SVG' />
+                    <span>BBQ Agency</span>
                     <Ink />
-                </div>
+                </Link>
+
+                <Link to={ prefixLink('/contacts/')} className='header__link' activeClassName='is-selected'>
+                    <span>Contacts</span>
+                    <Ink />
+                </Link>
+
             </div>
         );
     }
-}
-
-Header.propTypes = {
-    page: React.PropTypes.object,
 }
 
 export default Header
