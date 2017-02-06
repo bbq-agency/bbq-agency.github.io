@@ -41,33 +41,33 @@ class HomePage extends React.Component {
         let icon
 
         if (this.increment % 14 === 1) {
-            icon = <LogoCore key='LogoCore' />
+            icon = <LogoTimur key='LogoTimur' />
         } else if (this.increment % 14 === 2) {
             icon = <LogoDesign key='LogoDesign' />
         } else if (this.increment % 14 === 3) {
-            icon = <LogoDevops key='LogoDevops' />
+            icon = <LogoPm key='LogoPm' />
         } else if (this.increment % 14 === 4) {
             icon = <LogoFront key='LogoFront' />
         } else if (this.increment % 14 === 5) {
-            icon = <LogoInegration key='LogoInegration' />
+            icon = <LogoCore key='LogoCore' />
         } else if (this.increment % 14 === 6) {
-            icon = <LogoMarketing key='LogoMarketing' />
+            icon = <LogoInegration key='LogoInegration' />
         } else if (this.increment % 14 === 7) {
-            icon = <LogoOperation key='LogoOperation' />
-        } else if (this.increment % 14 === 8) {
-            icon = <LogoPm key='LogoPm' />
-        } else if (this.increment % 14 === 9) {
-            icon = <LogoProduct key='LogoProduct' />
-        } else if (this.increment % 14 === 10) {
-            icon = <LogoPromo key='LogoPromo' />
-        } else if (this.increment % 14 === 11) {
             icon = <LogoQa key='LogoQa' />
+        } else if (this.increment % 14 === 8) {
+            icon = <LogoDevops key='LogoDevops' />
+        } else if (this.increment % 14 === 9) {
+            icon = <LogoPromo key='LogoPromo' />
+        } else if (this.increment % 14 === 10) {
+            icon = <LogoMarketing key='LogoMarketing' />
+        } else if (this.increment % 14 === 11) {
+            icon = <LogoOperation key='LogoOperation' />
         } else if (this.increment % 14 === 12) {
-            icon = <LogoRamon key='LogoRamon' />
+            icon = <LogoProduct key='LogoProduct' />
         } else if (this.increment % 14 === 13) {
             icon = <LogoSmm key='LogoSmm' />
         } else {
-            icon = <LogoTimur key='LogoTimur' />
+            icon = <LogoRamon key='LogoRamon' />
         }
 
         return (
