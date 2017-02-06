@@ -11,6 +11,7 @@
     }
 
     &__content {
+        position: relative;
         background: #fff;
         text-align: center;
         padding: 65px 10px;
@@ -30,6 +31,14 @@
                 font-size: 30px;
             }
         }
+    }
+
+    &__img {
+        color: #fff;
+        width: 114px;
+        position: absolute;
+        top: -35px;
+        left: calc(100% + 25px);
     }
 
     &__text {
