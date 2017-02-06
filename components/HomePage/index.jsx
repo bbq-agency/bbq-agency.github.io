@@ -33,7 +33,7 @@ class HomePage extends React.Component {
                 <MorphReplaceResize className="homepage__morph" rotation={'none'}>
                     <ImageComponent key={imageName} />
                 </MorphReplaceResize>
-                <div className="homepage__slogan">We makes websites!</div>
+                <div className="homepage__slogan">We make websites!</div>
             </div>
         )
     }
