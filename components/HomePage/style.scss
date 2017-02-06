@@ -9,6 +9,10 @@
     position: relative;
     z-index: 20;
 
+    @include media(L) {
+        padding-top: 120px;
+    }
+
     &__morph {
         display: block;
         width: 100%;
@@ -18,9 +22,14 @@
     }
 
     &__slogan {
-        letter-spacing: 2.5px;
-        font-size: 60px;
+        //letter-spacing: 2.5px;
+        font-size: 36px;
         color: #fff;
         font-weight: 300;
+        padding: 0 20px;
+
+        @include media(M) {
+            font-size: 60px;
+        }
     }
 }
