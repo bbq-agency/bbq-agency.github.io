@@ -3,10 +3,8 @@
 // @import '../../node_modules/coriolan-ui/mixins/clearfix';
 
 .homepage {
-    // @include clearfix;
     text-align: center;
     width: 100%;
-    max-width: 444px;
     margin: 0 auto;
     position: relative;
     z-index: 20;
@@ -15,11 +13,14 @@
         display: block;
         width: 100%;
         height: auto;
+        max-width: 444px;
+        margin: 0 auto;
     }
 
     &__slogan {
         letter-spacing: 2.5px;
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 60px;
+        color: #fff;
+        font-weight: 300;
     }
 }

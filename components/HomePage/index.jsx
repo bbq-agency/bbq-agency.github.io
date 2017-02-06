@@ -50,7 +50,7 @@ class HomePage extends React.Component {
                 <MorphReplaceResize className='homepage__morph' width={200} height={200} rotation={'none'}>
                     {icon}
                 </MorphReplaceResize>
-                <h2 className='homepage__slogan'>We Makes Websites</h2>
+                <h2 className='homepage__slogan'>We makes websites!</h2>
                 <div dangerouslySetInnerHTML={{ __html: page.body}} />
             </div>
         );
