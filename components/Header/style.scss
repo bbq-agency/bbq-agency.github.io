@@ -3,24 +3,36 @@
 // @import '../../node_modules/coriolan-ui/mixins/clearfix';
 
 .header {
-    padding: 15px 150px;
     background: rgba(#000, .1);
     position: relative;
     margin: 0 auto;
     box-sizing: border-box;
-
     display: flex;
     justify-content: space-between;
+
+    @include media(S) {
+        padding: 0 60px;
+    }
+
+    @include media(M) {
+        padding: 0 110px;
+    }
 
     &__link {
         position: relative;
         display: block;
-        padding: 8px 10px;
         text-decoration: none;
-        text-align: left;
+        text-align: center;
+        padding: 23px 0;
         color: #fff;
         font-size: 18px;
         line-height: 24px;
+        width: 50%;
+
+        @include media(S) {
+            width: auto;
+            padding: 23px 40px;
+        }
 
         &--logo {
 
