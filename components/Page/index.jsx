@@ -1,5 +1,6 @@
 import React from 'react'
 import { prefixLink } from 'gatsby-helpers'
+import Ink from 'react-ink'
 
 import './style.scss';
 import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
@@ -13,10 +14,15 @@ class Page extends React.Component {
             <div className='page'>
                 <div className='page__content'>
 
-                    <img src={ (BbqLogo) } className='page__img' alt='BBQ Agency Logo SVG' />
+                    <div>
+                        <img src={ (BbqLogo) } className='page__logo' alt='BBQ Agency Logo' />
+                    </div>
 
-                    <div className='page__text'>
-                        <span>info@bbq.com</span>
+                    <div>
+                        <a className='page__mailto' href='mailto:info@bbq.com?subject=Hello BBQ Agency'>
+                            <span>info@bbq.com</span>
+                            <Ink />
+                        </a>
                     </div>
 
                 </div>

@@ -3,7 +3,7 @@
 @import '../../node_modules/coriolan-ui/mixins/media';
 
 .page {
-    padding: 60px 20px 0;
+    padding: 60px 10px 0;
     @include clearfix;
 
     @include media(M) {
@@ -24,24 +24,24 @@
         }
     }
 
-    &__img {
+    &__logo {
         width: 114px;
         margin-bottom: 35px;
     }
 
-    &__text {
-        display: flex;
-        flex-direction: column;
+    &__mailto {
+        position: relative;
         font-size: 18px;
+        color: #20242c;
+        text-decoration: none;
+        padding: 1em 2em;
 
         @include media(M) {
             font-size: 20px;
         }
 
-        span {
-            padding: 10px;
-            color: #20242c;
-            font-weight: 300;
+        &:hover {
+            // text-decoration: underline;
         }
     }
 }
