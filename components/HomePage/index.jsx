@@ -28,13 +28,19 @@ class HomePage extends React.Component {
         super(props);
         this.increment = 0;
         this.swap();
+
     }
     swap() {
-        setInterval(() => {
+        this.counter = setInterval(() => {
             this.increment++
             this.forceUpdate();
         }, 1400)
     }
+
+    componentWillUnmount() {
+        clearInterval(this.counter);
+    }
+    
     render() {
         const {route} = this.props
         const page = route.page.data
