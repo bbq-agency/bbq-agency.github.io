@@ -15,9 +15,18 @@
 
     &__img {
         position: absolute;
-        width: 114px;
-        top: 160px;
+        width: 84px;
+        top: 55px;
         left: calc(50% + 60px);
+
+        @include media(S) {
+            width: 114px;
+            top: 40px;
+        }
+
+        @include media(L) {
+            top: 160px;
+        }
     }
 
     &__morph {
