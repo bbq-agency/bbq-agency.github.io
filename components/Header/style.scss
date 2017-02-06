@@ -10,14 +10,6 @@
     display: flex;
     justify-content: space-between;
 
-    @include media(S) {
-        padding: 0 60px;
-    }
-
-    @include media(M) {
-        padding: 0 110px;
-    }
-
     &__link {
         position: relative;
         display: block;
@@ -29,9 +21,5 @@
         line-height: 24px;
         width: 50%;
 
-        @include media(S) {
-            width: auto;
-            padding: 23px 40px;
-        }
     }
 }
