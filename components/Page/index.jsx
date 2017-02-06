@@ -11,7 +11,12 @@ class Page extends React.Component {
         return (
             <div className='page'>
                 <h1>{ page.title }</h1>
-                <div dangerouslySetInnerHTML={{ __html: page.body}} />
+                <div className='page__text'>
+                    <span>Ukraine, Kyiv</span>
+                    <span>+ 380 66 665 65 65</span>
+                    <span>+ 380 66 665 65 65</span>
+                    <span>info@bbq.com</span>
+                </div>
             </div>
         );
     }
