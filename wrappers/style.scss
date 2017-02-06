@@ -11,7 +11,6 @@ body {
 }
 
 .flex-sticky {
-    // padding-top: 90px;
     box-sizing: border-box;
     min-height: 100%;
     display: flex;
@@ -19,6 +18,7 @@ body {
 
     &__content {
         flex: 1;
+        background: linear-gradient(135deg, #3023ae 0%, #c86dd7 100%);
     }
 
     &__footer {
