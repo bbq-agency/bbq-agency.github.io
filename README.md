@@ -18,8 +18,4 @@ _Web development of BBQ Agency site_
 
 `npm run develop`
 
-### Deploy
-
-`npm run deploy`
-
 #### Have fun! :)
