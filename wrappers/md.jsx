@@ -2,6 +2,7 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 import Page from '../components/Page'
 import HomePage from '../components/HomePage'
+import ContactsPage from '../components/ContactsPage'
 import Header from '../components/Header'
 
 import './style.scss'
@@ -18,6 +19,8 @@ class MarkdownWrapper extends React.Component {
             template = <Page {...this.props}/>
         } else if (layout === 'Home') {
             template = <HomePage {...this.props}/>
+        } else if (layout === 'Contacts') {
+            template = <ContactsPage {...this.props}/>
         }
 
         return (

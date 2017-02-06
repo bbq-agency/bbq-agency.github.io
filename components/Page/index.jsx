@@ -12,20 +12,7 @@ class Page extends React.Component {
 
         return (
             <div className='page'>
-                <div className='page__content'>
-
-                    <div>
-                        <img src={ (BbqLogo) } className='page__logo' alt='BBQ Agency Logo' />
-                    </div>
-
-                    <div>
-                        <a className='page__mailto' href='mailto:info@bbq.com?subject=Hello BBQ Agency'>
-                            <span>info@bbq.com</span>
-                            <Ink />
-                        </a>
-                    </div>
-
-                </div>
+                <div className='page__content' dangerouslySetInnerHTML={{ __html: page.body}} />
             </div>
         );
     }

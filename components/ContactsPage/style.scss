@@ -2,7 +2,7 @@
 @import '../../node_modules/coriolan-ui/mixins/clearfix';
 @import '../../node_modules/coriolan-ui/mixins/media';
 
-.page {
+.contacts-page {
     padding: 60px 10px 0;
     @include clearfix;
 
@@ -21,6 +21,27 @@
 
         @include media(M) {
             padding: 95px 10px;
+        }
+    }
+
+    &__logo {
+        width: 114px;
+        margin-bottom: 35px;
+    }
+
+    &__mailto {
+        position: relative;
+        font-size: 18px;
+        color: #20242c;
+        text-decoration: none;
+        padding: 1em 2em;
+
+        @include media(M) {
+            font-size: 20px;
+        }
+
+        &:hover {
+            // text-decoration: underline;
         }
     }
 }

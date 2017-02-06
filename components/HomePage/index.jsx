@@ -1,8 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import { config } from 'config'
-
 import { MorphReplace, MorphReplaceResize } from 'react-svg-morph';
 
 import LogoCore from '../SVG/LogoCore';
@@ -24,12 +20,14 @@ import './style.scss'
 import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
 
 class HomePage extends React.Component {
+
     constructor(props) {
         super(props);
         this.increment = 0;
         this.swap();
 
     }
+
     swap() {
         this.counter = setInterval(() => {
             this.increment++
@@ -42,17 +40,14 @@ class HomePage extends React.Component {
     }
     
     render() {
-        const {route} = this.props
-        const page = route.page.data
-
         let icon
 
         if (this.increment % 14 === 1) {
             icon = <LogoTimur key='LogoTimur' />
         } else if (this.increment % 14 === 2) {
-            icon = <LogoDesign key='LogoDesign' />
-        } else if (this.increment % 14 === 3) {
             icon = <LogoPm key='LogoPm' />
+        } else if (this.increment % 14 === 3) {
+            icon = <LogoDesign key='LogoDesign' />
         } else if (this.increment % 14 === 4) {
             icon = <LogoFront key='LogoFront' />
         } else if (this.increment % 14 === 5) {
@@ -83,15 +78,10 @@ class HomePage extends React.Component {
                 <MorphReplaceResize className='homepage__morph' rotation={'none'}>
                     {icon}
                 </MorphReplaceResize>
-                <div className='homepage__slogan'>We makes websites!</div>
-                <div dangerouslySetInnerHTML={{ __html: page.body}} />
+                <div className='homepage__slogan'>We make websites!</div>
             </div>
         );
     }
-}
-
-HomePage.propTypes = {
-    page: React.PropTypes.object,
 }
 
 export default HomePage

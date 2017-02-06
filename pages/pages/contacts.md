@@ -1,5 +1,5 @@
 ---
 title: 'Contacts'
-layout: Page
+layout: Contacts
 path: '/contacts/'
 ---
