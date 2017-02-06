@@ -21,6 +21,7 @@ import LogoSmm from '../SVG/LogoSmm';
 import LogoTimur from '../SVG/LogoTimur';
 
 import './style.scss'
+import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -72,6 +73,7 @@ class HomePage extends React.Component {
 
         return (
             <div className='homepage'>
+                <img src={ (BbqLogo) } className='homepage__img' alt='BBQ Agency Logo SVG' />
                 <MorphReplaceResize className='homepage__morph' rotation={'none'}>
                     {icon}
                 </MorphReplaceResize>

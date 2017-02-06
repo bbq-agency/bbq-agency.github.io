@@ -13,6 +13,13 @@
         padding-top: 120px;
     }
 
+    &__img {
+        position: absolute;
+        width: 114px;
+        top: 160px;
+        left: calc(50% + 60px);
+    }
+
     &__morph {
         display: block;
         width: 100%;
@@ -22,7 +29,6 @@
     }
 
     &__slogan {
-        //letter-spacing: 2.5px;
         font-size: 36px;
         color: #fff;
         font-weight: 300;
