@@ -12,8 +12,7 @@ class Header extends React.Component {
         return (
             <div className='header'>
 
-                <Link to={ prefixLink('/')} className='header__link header__link--logo' activeClassName='is-selected' onlyActiveOnIndex>
-                    {/*<img src={ prefixLink(BbqLogo) } alt='BBQ Agency Logo SVG' />*/}
+                <Link to={ prefixLink('/')} className='header__link' activeClassName='is-selected' onlyActiveOnIndex>
                     <span>BBQ Agency</span>
                     <Ink />
                 </Link>
