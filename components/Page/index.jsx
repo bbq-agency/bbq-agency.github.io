@@ -15,7 +15,7 @@ class Page extends React.Component {
 
                     <img src={ (BbqLogo) } className='page__img' alt='BBQ Agency Logo SVG' />
 
-                    <h1>BBQ Agency</h1>
+                    {/*<h1>BBQ Agency</h1>*/}
 
                     <div className='page__text'>
                         <span>Ukraine, Kyiv</span>
