@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers'
 
 import favicon32 from './static/img/favicons/favicon-32.png'
 import favicon144 from './static/img/favicons/favicon-144.png'
-import ogImage from './static/img/og-images/bbq-agency.png'
+import ogImage from './static/img/og-images/bbq-agency.jpg'
 
 
 const BUILD_TIME = new Date().getTime()
