@@ -3,45 +3,30 @@
 // @import '../../node_modules/coriolan-ui/mixins/clearfix';
 
 .header {
-    padding: 10px;
-    // background: #dedede;
+    padding: 15px 150px;
+    background: rgba(#000, .1);
     position: relative;
-    // letter-spacing: 2.5px;
-    // font-size: 10px;
-    max-width: 555px;
     margin: 0 auto;
+    box-sizing: border-box;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
 
     &__link {
         position: relative;
         display: block;
-        background: #eee;
         padding: 8px 10px;
         text-decoration: none;
         text-align: left;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px;
 
         &--logo {
 
             img {
                 max-width: 60px;
-                // display: block;
                 margin-right: 8px;
-            }
-
-            span {
-                // visibility: hidden;
-                // font-size: 0;
-                // position: absolute;
-                // text-indent: -9999px;
             }
         }
     }
