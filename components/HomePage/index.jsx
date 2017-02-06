@@ -4,12 +4,12 @@ import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 
 import { MorphReplace, MorphReplaceResize } from 'react-svg-morph';
-import AnimalBull from '../SVG/AnimalBull';
-import AnimalDog from '../SVG/AnimalDog';
-import AnimalRabbit from '../SVG/AnimalRabbit';
-import AnimalRhino from '../SVG/AnimalRhino';
-import AnimalRooster from '../SVG/AnimalRooster';
-import AnimalUnicorn from '../SVG/AnimalUnicorn';
+import LogoCore from '../SVG/LogoCore';
+import LogoDesign from '../SVG/LogoDesign';
+import LogoDevops from '../SVG/LogoDevops';
+import LogoFront from '../SVG/LogoFront';
+import LogoInegration from '../SVG/LogoInegration';
+import LogoMarketing from '../SVG/LogoMarketing';
 
 import './style.scss'
 
@@ -32,22 +32,22 @@ class HomePage extends React.Component {
         let icon
 
         if (this.increment % 6 === 1) {
-            icon = <AnimalBull key='AnimalBull' />
+            icon = <LogoCore key='LogoCore' />
         } else if (this.increment % 6 === 2) {
-            icon = <AnimalDog key='AnimalDog' />
+            icon = <LogoDesign key='LogoDesign' />
         } else if (this.increment % 6 === 3) {
-            icon = <AnimalRabbit key='AnimalRabbit' />
+            icon = <LogoDevops key='LogoDevops' />
         } else if (this.increment % 6 === 4) {
-            icon = <AnimalRhino key='AnimalRhino' />
+            icon = <LogoFront key='LogoFront' />
         } else if (this.increment % 6 === 5) {
-            icon = <AnimalRooster key='AnimalRooster' />
+            icon = <LogoInegration key='LogoInegration' />
         } else {
-            icon = <AnimalUnicorn key='AnimalUnicorn' />
+            icon = <LogoMarketing key='LogoMarketing' />
         }
 
         return (
             <div className='homepage'>
-                <MorphReplaceResize className='homepage__morph' width={200} height={200} rotation={'none'}>
+                <MorphReplaceResize className='homepage__morph' rotation={'none'}>
                     {icon}
                 </MorphReplaceResize>
                 <h2 className='homepage__slogan'>We makes websites!</h2>
