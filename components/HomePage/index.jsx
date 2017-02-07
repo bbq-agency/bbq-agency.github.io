@@ -3,7 +3,7 @@ import { MorphReplaceResize } from 'react-svg-morph'
 import * as ImageModule from '../SVG'
 
 import './style.scss'
-import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
+import BbqLogo from '../../static/img/svg-icons/bbq-logo.svg'
 
 class HomePage extends React.Component {
     constructor (props) {
@@ -29,7 +29,7 @@ class HomePage extends React.Component {
 
         return (
             <div className="homepage">
-                <img src={(BbqLogo)} className="homepage__img" alt="BBQ Agency Logo SVG" />
+                <img src={(BbqLogo)} className="homepage__img" alt="BBQ Logo" />
                 <MorphReplaceResize className="homepage__morph" rotation={'none'}>
                     <ImageComponent key={imageName} />
                 </MorphReplaceResize>

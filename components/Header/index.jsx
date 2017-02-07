@@ -5,7 +5,7 @@ import { config } from 'config'
 import Ink from 'react-ink'
 
 import './style.scss'
-import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
+import BbqAgencyLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
 
 class Header extends React.Component {
     render() {
@@ -13,7 +13,7 @@ class Header extends React.Component {
             <div className='header'>
 
                 <Link to={ prefixLink('/')} className='header__link' activeClassName='is-selected' onlyActiveOnIndex>
-                    <span>BBQ Agency</span>
+                    <img src={ (BbqAgencyLogo) } className='header__logo' alt='BBQ Agency Logo' />
                     <Ink />
                 </Link>
 

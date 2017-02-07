@@ -1,3 +1,6 @@
+@import '../../node_modules/coriolan-ui/tools/variables';
+@import '../../node_modules/coriolan-ui/mixins/media';
+
 .header {
     background: rgba(#000, .1);
     position: relative;
@@ -5,16 +8,32 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &__link {
         position: relative;
         display: block;
         text-decoration: none;
         text-align: center;
-        padding: 23px 0;
+        padding: 22px 0;
         color: #fff;
         font-size: 18px;
-        line-height: 24px;
         width: 50%;
+
+        @include media(S) {
+            padding: 20px 10px;
+        }
+
+        & .header__logo {
+            width: 100%;
+            max-width: 135px;
+            height: 100%;
+            max-height: 30px;
+            vertical-align: middle;
+
+            @include media(S) {
+                max-width: 160px;
+            }
+        }
     }
 }

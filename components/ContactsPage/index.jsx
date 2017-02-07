@@ -3,7 +3,7 @@ import { prefixLink } from 'gatsby-helpers'
 import Ink from 'react-ink'
 
 import './style.scss';
-import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
+import BbqLogo from '../../static/img/svg-icons/bbq-logo.svg'
 
 class Page extends React.Component {
     render() {
@@ -13,7 +13,7 @@ class Page extends React.Component {
                 <div className='contacts-page__content'>
 
                     <div className='contacts-page__row'>
-                        <img src={ (BbqLogo) } className='contacts-page__logo' alt='BBQ Agency Logo' />
+                        <img src={ (BbqLogo) } className='contacts-page__logo' alt='BBQ Logo' />
                     </div>
 
                     <div className='contacts-page__row'>
