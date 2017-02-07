@@ -17,7 +17,7 @@ class Page extends React.Component {
                     </div>
 
                     <div className='contacts-page__row'>
-                        <a className='contacts-page__mailto-btn' href='mailto:info@bbq.com?subject=Hello BBQ Agency'>
+                        <a className='contacts-page__mailto-btn' href='mailto:info@bbq.com?subject=Hello, BBQ Agency'>
                             <span>info@bbq.com</span>
                             <Ink />
                         </a>
