@@ -13,14 +13,10 @@
     &__content {
         background: #fff;
         text-align: center;
-        padding: 65px 10px;
+        padding: 70px 10px;
         max-width: 666px;
         border-radius: 4px;
         box-shadow: 0 2px 20px rgba(#000, .19);
         margin: 0 auto;
-
-        @include media(M) {
-            padding: 95px 10px;
-        }
     }
 }
