@@ -1,9 +1,6 @@
 import React from 'react'
-import { prefixLink } from 'gatsby-helpers'
-import Ink from 'react-ink'
 
 import './style.scss';
-import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
 
 class Page extends React.Component {
     render() {

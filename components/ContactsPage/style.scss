@@ -24,24 +24,32 @@
         }
     }
 
-    &__logo {
-        width: 114px;
-        margin-bottom: 35px;
+    &__row {
+        padding: 1.5rem 0;
     }
 
-    &__mailto {
+    &__logo {
+        width: 100%;
+        height: auto;
+        max-width: 114px;
+    }
+
+    &__mailto-btn {
         position: relative;
         font-size: 18px;
         color: #20242c;
         text-decoration: none;
-        padding: 1em 2em;
+        padding: 1em 1.5em;
+        border-radius: 1em;
+        background: rgba(#000,.05);
+        transition: background .2s ease-in-out;
 
         @include media(M) {
             font-size: 20px;
         }
 
         &:hover {
-            // text-decoration: underline;
+            background: rgba(#000,.1);
         }
     }
 }

@@ -7,19 +7,17 @@ import BbqLogo from '../../static/img/svg-icons/bbq-agency-logo.svg'
 
 class Page extends React.Component {
     render() {
-        const {route} = this.props
-        const page = route.page.data
 
         return (
             <div className='contacts-page'>
                 <div className='contacts-page__content'>
 
-                    <div>
+                    <div className='contacts-page__row'>
                         <img src={ (BbqLogo) } className='contacts-page__logo' alt='BBQ Agency Logo' />
                     </div>
 
-                    <div>
-                        <a className='contacts-page__mailto' href='mailto:info@bbq.com?subject=Hello BBQ Agency'>
+                    <div className='contacts-page__row'>
+                        <a className='contacts-page__mailto-btn' href='mailto:info@bbq.com?subject=Hello BBQ Agency'>
                             <span>info@bbq.com</span>
                             <Ink />
                         </a>
@@ -29,10 +27,6 @@ class Page extends React.Component {
             </div>
         );
     }
-}
-
-Page.propTypes = {
-    page: React.PropTypes.object,
 }
 
 export default Page
