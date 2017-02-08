@@ -1,13 +1,12 @@
 @import '../../node_modules/coriolan-ui/tools/variables';
-@import '../../node_modules/coriolan-ui/mixins/clearfix';
 @import '../../node_modules/coriolan-ui/mixins/media';
 
 .contacts-page {
-    padding: 60px 10px 0;
-    @include clearfix;
+    padding: 60px 10px;
 
     @include media(M) {
-        padding: 120px 20px 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     &__content {

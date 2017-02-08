@@ -3,37 +3,34 @@
 
 .header {
     background: rgba(#000, .1);
-    position: relative;
-    margin: 0 auto;
-    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     &__link {
         position: relative;
         display: block;
         text-decoration: none;
         text-align: center;
-        padding: 22px 0;
         color: #fff;
-        font-size: 18px;
+        font-size: 14px;
         width: 50%;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
 
         @include media(S) {
-            padding: 20px 10px;
+            font-size: 18px;
         }
+    }
 
-        & .header__logo {
-            width: 100%;
-            max-width: 135px;
-            height: 100%;
+    &__logo {
+        width: auto;
+        max-height: 24px;
+        vertical-align: middle;
+
+        @include media(S) {
             max-height: 30px;
-            vertical-align: middle;
-
-            @include media(S) {
-                max-width: 160px;
-            }
         }
     }
 }
